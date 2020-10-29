@@ -1,16 +1,23 @@
-function verificaPalindromo(string) {
-    let ehPalindromo = false;
-    for (let i = 0; i < string.length; i++) {
-        for (let j = string.length - 1; j < i; j--) {
-            if (string.length[i] === string.length[j]) {
-                ehPalindromo = true;
-            } else {
-                ehPalindromo = false;
-            }
-        }
+ function verificaPalindromo(string) {
 
-    }
-    return ehPalindromo;
-}
+     let ehPalindromo = false;
 
-console.log(verificaPalindromo('arara'));
+     let aoContrario = '';
+     for (let index = string.length - 1; index >= 0; index -= 1) {
+         aoContrario += string[index];
+
+     }
+
+
+
+
+     if (aoContrario === string) {
+         ehPalindromo = true;
+     } else {
+         ehPalindromo = false;
+     }
+     return ehPalindromo;
+ }
+
+
+ console.log(verificaPalindromo('osso'));
