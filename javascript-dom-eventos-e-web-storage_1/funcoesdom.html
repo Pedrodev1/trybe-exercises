@@ -43,17 +43,53 @@
     </div>
     <script>
         /*
-                                                                                                                                                                                                                                                                Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-                                                                                                                                                                                                                                                                - document.getElementById()
-                                                                                                                                                                                                                                                                - document.getElementsByClassName()
-                                                                                                                                                                                                                                                                - document.getElementsByTagName()*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        - document.getElementById()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        - document.getElementsByClassName()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        - document.getElementsByTagName()*/
         //Crie uma função que mude o texto na tag < p > para uma descrição de como você se vê daqui a 2 anos.(Não gaste tempo pensando no texto e sim realizando o exercício)
-        document.getElementsByClassName('center-content')[0].innerHTML = 'Como um engenheiro de software formado e bem empregado no mercado de trabalho';
+        function changetext(texto) {
+            document.getElementsByTagName("p")[0].innerHTML = texto;
+        }
+        changetext('Como um engenheiro de software formado e bem empregado no mercado de trabalho');
         //Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe(rgb(76, 164, 109)).
+
+        function changeColorToGreen(color) {
+            document.getElementsByClassName('main-content')[0].style.backgroundColor = color;
+        }
+        changeColorToGreen("rgb(76, 164, 109)");
+
         //Crie uma função que mude a cor do quadrado vermelho para branco.
+
+        function changeRedToWhite(color) {
+            document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
+        }
+        changeRedToWhite("white");
+
         //Crie uma função que corrija o texto da tag < h1 > .
+
+        function correctingh1(texto) {
+            document.getElementsByClassName('title')[0].innerHTML = texto;
+        }
+        correctingh1('Exercicio 5.1 - JavaScript');
+
+
         //Crie uma função que modifique todo o texto da tag < p > para maiúsculo.
+        function modifyingTagP() {
+            let texto = document.getElementsByTagName("p");
+            for (let i = 0; i < texto.length; i += 1)
+                texto[i].style.textTransform = "uppercase";
+        }
+        modifyingTagP();
         //Crie uma função que exiba o conteúdo de todas as tags < p > no console.
+
+        function showingTagP() {
+            let texto = document.getElementsByTagName("p");
+            for (let i = 0; i < texto.length; i += 1) {
+                console.log(document.getElementsByTagName("p")[i].innerHTML);
+            }
+        }
+        showingTagP();
     </script>
 </body>
 
