@@ -66,15 +66,23 @@
         body.appendChild(Titulo1);
 
         //Ex2
-        let body = document.querySelector('body');
-        let div1 = document.createElement('.main-content');
-        body.appendChild(div1);
+        let bodyDiv1 = document.querySelector('body');
+        let maincontent = document.createElement('div');
+        maincontent.className = 'main-content';
+        bodyDiv1.appendChild(maincontent);
 
 
         //Ex3
-        let div2 = document.createElement('.center-content');
-        let div1 = document.querySelector('div1');
-        div1.appendChild(div2);
+        let main_content = document.querySelector('.main-content');
+        let centercontent = document.createElement('div');
+        centercontent.className = 'center-content';
+        maincontent.appendChild(centercontent);
+
+        //Ex4
+        let paragrafoChildOfCenterCont = document.createElement('p');
+        paragrafoChildOfCenterCont.innerText = 'Estamos no bloco 5 da trybe';
+        let center_content = document.querySelector('.center-content');
+        center_content.appendChild(paragrafoChildOfCenterCont);
     </script>
 </body>
 
