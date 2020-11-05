@@ -83,6 +83,29 @@
         paragrafoChildOfCenterCont.innerText = 'Estamos no bloco 5 da trybe';
         let center_content = document.querySelector('.center-content');
         center_content.appendChild(paragrafoChildOfCenterCont);
+
+
+        //Ex 5
+        let leftcontent = document.createElement('div');
+        leftcontent.className = 'left-content';
+        let mainContent = document.querySelector('.main-content');
+        mainContent.appendChild(leftcontent);
+
+        // Ex 6
+
+        let rightcontent = document.createElement('div');
+        rightcontent.className = 'right-content';
+        let mainC0ntent = document.querySelector('.main-content');
+        mainC0ntent.appendChild(rightcontent);
+
+
+        // Ex 7
+
+        let left_content = document.querySelector('.left-content');
+        let img = document.createElement('img');
+        img.src = 'https://picsum.photos/200';
+        img.className = 'small-image';
+        left_content.appendChild(img);
     </script>
 </body>
 
