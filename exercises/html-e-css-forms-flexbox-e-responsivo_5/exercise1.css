@@ -1,0 +1,96 @@
+            body {
+                font-size: 20px;
+                margin: 10px auto;
+            }
+            
+            h1 {
+                font-size: 30px;
+            }
+            
+            h2 {
+                font-size: 15px;
+                padding: 0 18px;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+            .imagens {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            
+            figure {
+                flex: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0 4px;
+            }
+            
+            p {
+                font-size: 0.9rem;
+                text-align: justify;
+                padding: 0 20px;
+            }
+            
+            @media screen and (min-width:500px) {
+                body {
+                    background-color: blue;
+                    margin: 25px;
+                }
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            h2 {
+                font-size: larger;
+            }
+            
+            img {
+                display: flex;
+                padding: 10px;
+                flex-flow: row wrap;
+            }
+            
+            figure {
+                flex: 50%;
+                max-width: 70%;
+            }
+            
+            p {
+                width: 70%;
+                text-align: justify;
+            }
+            
+            figcaption {
+                font-size: 16.5px;
+            }
+            
+            @media (min-width: 900px) {
+                body {
+                    background-color: aquamarine;
+                    max-width: 900px;
+                }
+                h1 {
+                    font-size: larger;
+                }
+                p {
+                    font-size: 16px;
+                    text-align: center;
+                    width: 95%;
+                }
+                h2 {
+                    font-size: 21px;
+                }
+                figure {
+                    flex: 50%;
+                    max-width: 70%;
+                }
+                figcaption {
+                    font-size: 16.5px;
+                }
+            }
