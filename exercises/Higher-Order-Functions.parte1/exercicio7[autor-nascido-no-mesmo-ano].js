@@ -66,14 +66,13 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  return books.every(
-    (books) =>
-      !books.some(
-        (BookSome) =>
-          (BookSome.author.birthYear === books.author.birthYear) && (BookSome.id !== books.id)
-      ));
-}
+  const Books = books.every((book) => {
+    return !books.some((BookSome) => {
+      (BookSome.author.birthYear === book.author.birthYear) && (BookSome.id !== book.id)
+    });
+  });
 
+}
 
 
 
