@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="get" id="forms">
+        <fieldset>
+            <label for="nome-completo">Digite seu nome:
+            <input type="text" name="nome" id="nome-completo" maxlength="40" required>
+        </label>
+
+            <br>
+            <label for="email-pessoal">Digite seu email: 
+                <input type="email" name="email" id="email-pessoal" maxlength="50" required>
+            </label>
+
+            <br>
+            <label for="cpf">Digite seu cpf:
+                <input type="text" name="cpf" id="cpf" maxlength="11" required> 
+            </label>
+            <br>
+            <label for="endereco">Digite seu endereço:
+                <input type="text" name="endereco" id="endereco" maxlength="200" required>
+            </label>
+            <br>
+            <label for="cidade">Digite sua cidade:
+                <input type="text" name="cidade" id="cidade" maxlength="28" required>
+            </label>
+            <br>
+            <label for="input-estado">Selecione um estado: <select name="estado" id="input-estado" required>
+            </select>
+            </label>
+            <!--                 
+                <option value="ac">Acré</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="es">Espirito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+                 -->
+
+            <br>
+            <p>Tipo :</p>
+            <input type="radio" id="casa" name="tipo" value="casa" checked>
+            <label for="casa">Casa</label><br>
+            <input type="radio" id="apartamento" name="tipo" value="apartamento">
+            <label for="apartamento">Apartamento</label><br>
+
+
+
+        </fieldset>
+        <fieldset>
+            <label for="curriculum">Resumo do currículo: </label><br><br>
+            <textarea id="curriculum" name="curriculum" rows="10" cols="25" placeholder="Escreva um resumo sobre seu currículo" maxlength="100"></textarea><br><br>
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" maxlength="40">
+            <br>
+            <br>
+            <label for="descricao">Descrição do cargo:</label>
+            <input type="text" id="descricao" name="descricao" maxlength="500">
+
+            <br>
+            <br>
+
+            <label for="data">Data de inicio:</label>
+            <input type="date" id="data" name="data">
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar</button>
+        <button id="stop" onclick="StopExec()">Parar Formulário</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
