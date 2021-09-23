@@ -26,5 +26,6 @@ function categoriaIMC(imc){
 
 
 
+
 console.log(calcularIMC());
 console.log(categoriaIMC(calcularIMC()));
