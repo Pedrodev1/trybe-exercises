@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "imc": "node imc",
-    "velocidade": "node velocidade"
+    "velocidade": "node velocidade",
+    "sorteio": "node sorteio",
+    "start": "node index.js",
+    "fatorial": "node fatorial.js",
+    "fibonacci": "node fibonacci.js"
   },
   "author": "Pedro Oliveira",
   "license": "ISC",
