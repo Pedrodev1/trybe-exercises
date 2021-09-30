@@ -6,4 +6,5 @@ function velocidadeMediaCarro() {
    return (distancia / tempo ).toFixed(2);
 }
 
-console.log(`${velocidadeMediaCarro()} m por segundos`);
+console.log(`${velocidadeMediaCarro()} m per seconds`);
+

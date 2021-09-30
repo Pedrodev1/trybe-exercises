@@ -11,12 +11,12 @@ function getRandomIntInclusive(min = 0, max = 10) {
 function matchNumber(){
   const userNumber = readline.questionInt('What`s is your number? PS: BETWEEN 0 and 10 ');
   if(userNumber === getRandomIntInclusive()){
-    console.log('Parabéns, número correto!')
+    console.log('Congratulations, you got it right!')
   } else{
-    console.log(`Opa, não foi dessa vez. O número era ${getRandomIntInclusive()}`)
+    console.log(`Oops, not this time. The number was ${getRandomIntInclusive()}`)
   }
   const jogarNovamente = readline.question('Do you wish 2 play again? (s/n)');
-  if (jogarNovamente === 'n') return console.log('Muito obrigado!');
+  if (jogarNovamente === 'n') return console.log('Thank you so much!');
 
   matchNumber();
 }
